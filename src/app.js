@@ -6,7 +6,7 @@ import 'bulma'
 import axios from 'axios'
 
 
-import { BrowserRouter, Route, Link, Switch } from 'react-router-dom'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import BooksIndex from './components/books/BooksIndex'
 import Home from './components/Home'
 import BooksNew from './components/books/BooksNew'
@@ -19,7 +19,7 @@ class App extends React.Component {
     super()
 
     this.state = {}
-    
+
   }
 
 
