@@ -10,6 +10,7 @@ import { BrowserRouter, Route, Link, Switch } from 'react-router-dom'
 import BooksIndex from './components/books/BooksIndex'
 import Home from './components/Home'
 import BooksNew from './components/books/BooksNew'
+import Header from './components/common/Header'
 
 
 
@@ -18,7 +19,9 @@ class App extends React.Component {
     super()
 
     this.state = {}
+    
   }
+
 
   componentDidMount() {
     console.log('the Component did mount!')
@@ -33,14 +36,11 @@ class App extends React.Component {
     return (
       <main>
         <div className="container section">
-          <h2 className="title is-2">Beths Books App</h2>
+
           <BrowserRouter>
             <main>
-              <nav>
-                <Link to="/">Home </Link>
-                <Link to="/books"> books Index</Link>
-                <Link to="/books/new"> Add a book</Link>
-              </nav>
+
+              <Header />
 
               <Switch>
                 <Route path="/books/new" component={BooksNew} />

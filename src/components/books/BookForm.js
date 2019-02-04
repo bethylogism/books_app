@@ -40,11 +40,11 @@ const BookForm = ({ data, handleChange, handleSubmit }) => {
         </div>
       </div>
       <div className="field">
-        <label className="label">Release Date</label>
+        <label className="label">Release Year</label>
         <div className="control">
           <input
             className="input"
-            placeholder="Release Data"
+            placeholder="Release Year"
             name="releaseDate"
             onChange={handleChange}
             value={data.releaseDate}
