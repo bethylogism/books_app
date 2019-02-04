@@ -16,6 +16,7 @@ class BooksIndex extends React.Component{
   }
 
   render() {
+    if (!this.state.data) return <p> Waiting for your book </p>
     return (
       <section className='section'>
         <div className='container'>

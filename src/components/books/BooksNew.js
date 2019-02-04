@@ -37,6 +37,7 @@ class BooksNew extends React.Component {
 
 
   render() {
+    if (!this.state.data) return <p> Waiting for your book </p>
     return(
       <main className="section">
         <div className="container">

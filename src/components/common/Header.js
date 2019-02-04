@@ -35,8 +35,8 @@ class Header extends React.Component {
         <div id="navbarBasicExample" className={`navbar-menu ${this.state.navbarOpen? 'is-active': ''}`}>
           <div className="navbar-end">
             <Link to='/' className="navbar-item">Home</Link>
-            <Link to='/api/books' className="navbar-item">Book list</Link>
-            <Link to='/api/books/new' className="navbar-item">Add a book</Link>
+            <Link to='/books' className="navbar-item">Book list</Link>
+            <Link to='/books/new' className="navbar-item">Add a book</Link>
 
           </div>
         </div>
