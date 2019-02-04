@@ -9,7 +9,7 @@ const app = express()
 
 app.use(express.static(`${__dirname}/dist`))
 
-mongoose.connect('mongodb://localhost/books')
+mongoose.connect(`mongodb://${process.env.PORT}/books`)
 
 app.use(bodyParser.json())
 app.use(routes)
