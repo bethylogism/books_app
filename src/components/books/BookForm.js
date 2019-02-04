@@ -9,7 +9,7 @@ const BookForm = ({ data, handleChange, handleSubmit }) => {
           <input
             className="input"
             placeholder="Title"
-            name="name"
+            name="title"
             onChange={handleChange}
             value={data.title}
           />

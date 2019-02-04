@@ -29,7 +29,7 @@ class BooksNew extends React.Component {
     e.preventDefault()
     console.log(this.state.data)
     axios
-      .post('https://react-simple-books-app.herokuapp.com/books', this.state.data)
+      .post('/api/books', this.state.data)
       .then(() => this.props.history.push('/books'))
       .catch(err => alert(err.message))
   }
